@@ -43,6 +43,9 @@ void render_init()
 
 void render_update()
 {
+	if (glfwWindowShouldClose(window))
+		exit(0);
+
 	glClearColor(1.0f, 1.0f, 1.0f, 0.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
 
